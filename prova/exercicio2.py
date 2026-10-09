@@ -26,10 +26,23 @@ cojunto_ma= set(agenda_maria)
 conunto_ana= set(agenda_ana)
 conjunto_bea= set(agenda_beatriz)
 
-interçesao= cojunto_ma.intersection(conjunto_bea),(conunto_ana)
+interçesao= cojunto_ma.intersection(conjunto_bea).intersection(conunto_ana)
 interçesao2= str(interçesao)
 print("os contatos iguais sao :" + interçesao2)
 
-diferença= cojunto_ma.difference(conunto_ana),(conjunto_bea)
-diferença2= str(diferença)
-print("os contatos diferentes sao: " + diferença2)
+diferença= cojunto_ma.difference(conunto_ana)
+diferença_ana= str(diferença)
+print("os contatos diferentes sao: " + diferença_ana)
+
+diferença= cojunto_ma.difference(conjunto_bea)
+diferença_ma= str(diferença)
+print("os contatos diferentes sao: " + diferença_ma)
+
+diferença= cojunto_ma.difference(conunto_ana)
+diferença_ana= str(diferença)
+print("os contatos diferentes sao: " + diferença_ana)
+
+diferença= conjunto_bea.difference(cojunto_ma)
+diferença_bea= str(diferença)
+print("os contatos diferentes sao: " + diferença_bea)
+
